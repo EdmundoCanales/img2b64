@@ -42,7 +42,7 @@ jobs:
           pyinstaller --onefile --console `
             --name img2b64 `
             --icon app.ico `
-            img2b64.py
+            img2b64/img2b64.py
 
       # Upload the EXE as a build artifact
       - uses: actions/upload-artifact@v4
