@@ -1,4 +1,6 @@
-import argparse, base64, sys
+import argparse
+import base64
+import sys
 from pathlib import Path
 
 
