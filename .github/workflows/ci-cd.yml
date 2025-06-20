@@ -45,7 +45,7 @@ jobs:
             img2b64.py
 
       # Upload the EXE as a build artifact
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: img2b64-executable
           path: dist/img2b64.exe
@@ -55,7 +55,7 @@ jobs:
     needs: build-exe
     runs-on: windows-latest
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: img2b64-executable
       - uses: softprops/action-gh-release@v1
