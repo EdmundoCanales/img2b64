@@ -1,5 +1,5 @@
-from img2b64 import img_to_b64
 from pathlib import Path
+from img2b64.img2b64 import img_to_b64
 
 
 def test_png_output():
