@@ -39,9 +39,9 @@ jobs:
 
       # Create one-file executable
       - run: |
-          pyinstaller --onefile --console \
-            --name img2b64 \
-            --icon app.ico \
+          pyinstaller --onefile --console `
+            --name img2b64 `
+            --icon app.ico `
             img2b64.py
 
       # Upload the EXE as a build artifact
