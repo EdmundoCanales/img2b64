@@ -23,9 +23,7 @@ def main():
         description="Convert an image file to a Markdown‐embedded Base64 string."
     )
     p.add_argument("input", type=Path, help="Path to the image file.")
-    p.add_argument(
-        "-o", "--output", type=Path, help="write MD snippet to a file (default=stdout)"
-    )
+    p.add_argument("-o", "--output", type=Path, help="write MD snippet to a file (default=stdout)")
     args = p.parse_args()
 
     try:
